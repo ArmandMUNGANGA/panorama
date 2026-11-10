@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOTEL PANORAMA - Bukavu | Vue Lac Kivu</title>
+<style>
+*{box-sizing:border-box} body{font-family:Arial,sans-serif;margin:0;background:#F5F7FA;color:#222;padding-bottom:20px}
+header{background:linear-gradient(#00000070,#00000070),url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80');background-size:cover;background-position:center;color:white;padding:45px 15px;text-align:center}
+header h1{margin:0;font-size:34px;letter-spacing:2px}
+header p{margin:6px 0;font-size:14px}
+.btn-w{background:#25D366;color:white;padding:13px 22px;border-radius:30px;text-decoration:none;display:inline-block;font-weight:bold;margin:6px}
+.btn-b{background:white;color:#0B3D5F;padding:13px 22px;border-radius:30px;text-decoration:none;display:inline-block;font-weight:bold;margin:6px}
+.badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:12px}
+.badges span{background:#ffffff25;border:1px solid #fff;padding:6px 10px;border-radius:20px;font-size:12px}
+section{padding:15px}
+h2{color:#0B3D5F;border-bottom:2px solid #F2B705;padding-bottom:6px}
+.chambre{background:white;border-radius:16px;overflow:hidden;margin:14px 0;box-shadow:0 3px 12px #00000012}
+.chambre img{width:100%;height:210px;object-fit:cover}
+.chambre .pad{padding:14px}
+.prix{color:#B71C1C;font-weight:bold;font-size:20px}
+.prix small{font-size:13px;color:#666;font-weight:normal}
+.chambre button{background:#0B3D5F;color:white;border:none;width:100%;padding:12px;border-radius:10px;font-weight:bold;font-size:15px;margin-top:8px}
+.tag{background:#F2B705;color:#222;font-size:12px;padding:4px 8px;border-radius:20px;font-weight:bold}
+.plat{background:white;border-radius:14px;padding:10px;margin:10px 0;display:flex;gap:12px;align-items:center;box-shadow:0 2px 8px #00000010}
+.plat img{width:90px;height:90px;object-fit:cover;border-radius:10px}
+.plat b{font-size:15px}
+.plat span{font-size:13px;color:#666;display:block}
+.form{background:white;padding:18px;border-radius:16px;margin:15px;box-shadow:0 3px 12px #00000012}
+input,select,textarea{width:100%;padding:12px;margin:6px 0;border:1px solid #ddd;border-radius:10px;font-size:15px}
+.form button{background:#25D366;color:white;border:none;width:100%;padding:14px;border-radius:10px;font-weight:bold;font-size:16px}
+footer{background:#0B3D5F;color:white;padding:22px;text-align:center;font-size:14px}
+footer a{color:#25D366;text-decoration:none}
+.galerie{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.galerie img{width:100%;height:120px;object-fit:cover;border-radius:10px}
+</style>
+</head>
+<body>
+
+<header>
+<h1>HOTEL PANORAMA</h1>
+<p>⭐⭐⭐⭐ | N°2 à Bukavu</p>
+<p>📍 N°12 Boulevard du Lac, La Botte - Bukavu, RDC</p>
+<p>🌊 Vue Panoramique sur le Lac Kivu</p>
+<a class="btn-w" href="https://wa.me/243975417780?text=Bonjour%20Hotel%20Panorama%2C%20je%20veux%20r%C3%A9server">📲 Réserver sur WhatsApp</a><br>
+<a class="btn-b" href="#chambres">Voir les Chambres</a> <a class="btn-b" href="#resto">Restaurant</a>
+<div class="badges"><span>🏊 Piscine</span><span>🏋️ Gym</span><span>🧖 Sauna</span><span>🍽️ Restaurant</span><span>📶 WiFi Gratuit</span><span>🅿️ Parking</span></div>
+</header>
+
+<section>
+<h2>✨ L'Hôtel</h2>
+<p>L'Hôtel Panorama est construit sur la colline, au bord du Lac Kivu. Toutes les chambres ont une vue imprenable sur le lac. Piscine face au lac, bar plage, restaurant, gym et sauna. Idéal pour les voyages d'affaires, les familles et les touristes qui visitent les gorilles du Kahuzi-Biega.</p>
+<div class="galerie">
+<img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80">
+<img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80">
+<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80">
+</div>
+</section>
+
+<section id="chambres">
+<h2>🛏️ Nos Chambres - Vue Lac Kivu</h2>
+
+<div class="chambre">
+<img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=900&q=80">
+<div class="pad"><span class="tag">POPULAIRE</span> <b>Chambre Standard</b><p>1 Lit double ou 2 lits simples • Clim • TV écran plat • Salle de bain privée • Moustiquaire • Vue lac</p><div class="prix">80$ <small>/ nuit - Petit déjeuner inclus</small></div><button onclick="reserverChambre('Chambre Standard - 80$')">Réserver cette chambre</button></div>
+</div>
+
+<div class="chambre">
+<img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=900&q=80">
+<div class="pad"><b>Chambre Deluxe Vue Lac</b><p>Balcon privé face au Lac Kivu • Baignoire • Minibar • Coin salon • Lit King Size</p><div class="prix">120$ <small>/ nuit - Petit déjeuner inclus</small></div><button onclick="reserverChambre('Chambre Deluxe Vue Lac - 120$')">Réserver cette chambre</button></div>
+</div>
+
+<div class="chambre">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80">
+<div class="pad"><b>Suite Panorama</b><p>Suite familiale • Salon + Chambre • Terrasse panoramique • 2 TV • Idéal pour famille</p><div class="prix">180$ <small>/ nuit - Petit déjeuner inclus</small></div><button onclick="reserverChambre('Suite Panorama - 180$')">Réserver cette chambre</button></div>
+</div>
+
+<div class="chambre">
+<img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=900&q=80">
+<div class="pad"><b>Chambre Familiale / Triple</b><p>3 personnes • 1 Lit double + 1 Lit simple • Clim • Salle de bain</p><div class="prix">150$ <small>/ nuit - Petit déjeuner inclus</small></div><button onclick="reserverChambre('Chambre Familiale Triple - 150$')">Réserver cette chambre</button></div>
+</div>
+</section>
+
+<section id="resa">
+<div class="form">
+<h2>📅 Réserver une Chambre</h2>
+<input type="text" id="nomC" placeholder="Votre nom complet">
+<input type="text" id="telC" placeholder="Votre WhatsApp / Téléphone">
+<label>Arrivée</label><input type="date" id="arrivee">
+<label>Départ</label><input type="date" id="depart">
+<select id="typeC"><option>Chambre Standard - 80$</option><option>Chambre Deluxe Vue Lac - 120$</option><option>Suite Panorama - 180$</option><option>Chambre Familiale - 150$</option></select>
+<select id="persC"><option>1 Personne</option><option>2 Personnes</option><option>3 Personnes</option><option>4 Personnes / Famille</option></select>
+<textarea id="msgC" placeholder="Demande spéciale : navette aéroport, lit bébé, etc."></textarea>
+<button onclick="envoyerChambre()">✅ Envoyer la Réservation sur WhatsApp</button>
+<p style="font-size:12px;color:#666;text-align:center">Check-in : 12h00 | Check-out : 12h00 | Confirmation sous 10 min</p>
+</div>
+</section>
+
+<section id="resto">
+<h2>🍽️ Restaurant Panorama - Face au Lac</h2>
+<p>Cuisine congolaise & internationale, petit déjeuner face au lac, dîner en terrasse.</p>
+
+<div class="plat"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80"><div><b>Petit Déjeuner Continental</b><span>Inclus avec la chambre • 07h00 - 10h30</span><b>10$</b></div></div>
+<div class="plat"><img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&q=80"><div><b>Tilapia Grillé du Lac Kivu</b><span>Spécialité de l'hôtel</span><b>18$</b></div></div>
+<div class="plat"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80"><div><b>Saka-Saka + Riz / Fufu</b><span>Plat congolais</span><b>12$</b></div></div>
+<div class="plat"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=400&q=80"><div><b>Grillades Mixtes Panorama</b><span>Brochettes, poulet, bœuf</span><b>20$</b></div></div>
+
+<div class="form">
+<h2>📅 Réserver une Table au Restaurant</h2>
+<input type="text" id="nomR" placeholder="Votre nom">
+<input type="date" id="dateR">
+<select id="heureR"><option>12h00 - Déjeuner</option><option>13h00 - Déjeuner</option><option>18h00 - Dîner</option><option>19h00 - Dîner</option><option>20h00 - Dîner</option></select>
+<select id="persR"><option>2 Personnes</option><option>4 Personnes</option><option>6 Personnes</option><option>Groupe / Événement</option></select>
+<button onclick="reserverTable()">Réserver une Table sur WhatsApp</button>
+</div>
+</section>
+
+<footer>
+<b>HOTEL PANORAMA - BUKAVU</b><br>
+N°12 Boulevard du Lac, La Botte, Bukavu - RDC<br>
+📞 WhatsApp : +243 975 417 780<br>
+✉️ Email : armandmunganga7@gmail.com<br>
+Piscine • Gym • Sauna • Bar Plage • Restaurant • Parking<br><br>
+© 2026 Hotel Panorama Bukavu - Site créé par Armand Munganga
+</footer>
+
+<script>
+function reserverChambre(type){
+document.getElementById('typeC').value=type;
+document.getElementById('resa').scrollIntoView({behavior:'smooth'});
+}
+function envoyerChambre(){
+let n=document.getElementById('nomC').value, t=document.getElementById('telC').value, a=document.getElementById('arrivee').value, d=document.getElementById('depart').value, ty=document.getElementById('typeC').value, p=document.getElementById('persC').value, m=document.getElementById('msgC').value;
+if(!n||!a||!d){alert('Remplissez nom, arrivée et départ');return}
+let msg='Bonjour HOTEL PANORAMA, je veux réserver:%0A Nom: '+n+'%0A Tel: '+t+'%0A Chambre: '+ty+'%0A Arrivée: '+a+'%0A Départ: '+d+'%0A Personnes: '+p+'%0A Message: '+m;
+window.open('https://wa.me/243975417780?text='+msg)
+}
+function reserverTable(){
+let n=document.getElementById('nomR').value, d=document.getElementById('dateR').value, h=document.getElementById('heureR').value, p=document.getElementById('persR').value;
+let msg='Bonjour HOTEL PANORAMA RESTAURANT, je veux réserver une table:%0A Nom: '+n+'%0A Date: '+d+'%0A Heure: '+h+'%0A '+p;
+window.open('https://wa.me/243975417780?text='+msg)
+}
+</script>
+</body>
+</html>
